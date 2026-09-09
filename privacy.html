@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SnapDrivin — Política de Privacidade / Privacy Policy</title>
+<style>
+  :root { --ink:#1a1a1a; --muted:#555; --line:#e3e3e3; --accent:#0a5c8a; --bg:#ffffff; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font:16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:40px 20px 80px; }
+  h1 { font-size:1.7rem; margin:0 0 4px; }
+  h2 { font-size:1.25rem; margin:2.2em 0 .5em; border-bottom:1px solid var(--line); padding-bottom:6px; }
+  h3 { font-size:1.02rem; margin:1.6em 0 .4em; }
+  p, li { color:var(--ink); }
+  .meta { color:var(--muted); font-size:.92rem; margin-bottom:28px; }
+  .lang-switch { margin:18px 0 6px; font-size:.95rem; }
+  .lang-switch a { color:var(--accent); text-decoration:none; margin-right:14px; }
+  .lang-switch a:hover { text-decoration:underline; }
+  table { border-collapse:collapse; width:100%; font-size:.93rem; margin:10px 0 4px; }
+  th, td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:#f7f7f7; }
+  .divider { margin:60px 0 40px; border:none; border-top:2px solid var(--line); }
+  footer { margin-top:56px; color:var(--muted); font-size:.88rem; border-top:1px solid var(--line); padding-top:16px; }
+</style>
+</head>
+<body>
+<main>
+
+<div class="lang-switch"><a href="#pt">🇵🇹 Português</a> <a href="#en">🇬🇧 English</a></div>
+
+<!-- ============================== PORTUGUÊS ============================== -->
+<section id="pt">
+<h1>Política de Privacidade — SnapDrivin</h1>
+<p class="meta">Última atualização: 23 de agosto de 2026 · Versão 1.1</p>
+
+<p>A SnapDrivin é uma aplicação que analisa anúncios públicos de automóveis usados (por exemplo do OLX e do Standvirtual) e apresenta uma avaliação informativa do veículo: preço face ao mercado, problemas conhecidos do motor e estimativa de custos de utilização. Esta política explica, de forma honesta e completa, que dados tratamos, porquê, e quais são os teus direitos.</p>
+
+<p>O responsável pelo tratamento é o programador individual da SnapDrivin. Contacto para questões de privacidade: <strong>admin@snapdrivin.pt</strong>.</p>
+
+<h2>1. Dados que recolhemos</h2>
+
+<h3>1.1 Conta (opcional)</h3>
+<p>Podes usar a SnapDrivin sem criar conta. Se optares por registar-te, recolhemos: <strong>endereço de email</strong>, <strong>nome</strong> e <strong>palavra-passe</strong> (guardada apenas de forma cifrada com hash bcrypt — nunca em texto legível).</p>
+
+<h3>1.2 Identificador de dispositivo</h3>
+<p>No primeiro arranque a app cria um <strong>identificador anónimo de convidado</strong> (um código aleatório, sem ligação à tua identidade real) e regista a plataforma do dispositivo (Android/iOS). Se ativares notificações, guardamos também o <strong>token de notificações push</strong> do dispositivo. Este identificador permite guardar o teu histórico e aplicar limites de utilização justos sem exigir conta.</p>
+
+<h3>1.3 Dados de utilização e diagnóstico</h3>
+<p>Registamos <strong>contadores de utilização</strong> (número de análises efetuadas por dia, associado ao identificador de conta ou de convidado) para aplicar os limites do plano gratuito, e as <strong>análises que decidires guardar</strong> no teu histórico. Quando a aplicação encontra um erro, são recolhidos <strong>dados técnicos de diagnóstico</strong> (modelo do dispositivo, versão da app, rastreio do erro) para o corrigirmos — ver secção 3 (Sentry). Contamos ainda, de forma <strong>agregada e anónima</strong>, eventos de utilização (por exemplo, quantas análises são iniciadas, concluídas ou falham, e de que portal), <strong>sem cookies, sem o teu endereço IP e sem qualquer identificador</strong> — apenas totais por dia, para melhorar o serviço.</p>
+
+<h3>1.4 Dados dos anúncios analisados</h3>
+<p>Quando submetes o link de um anúncio, tratamos os <strong>dados públicos desse anúncio</strong>: marca, modelo, ano, quilometragem, motorização, preço e o endereço da fotografia principal. Estes são dados publicados pelo vendedor no site de anúncios, não dados pessoais teus. Para melhorar a fiabilidade, a app pode transmitir o conteúdo HTML da página do anúncio a partir do teu dispositivo para os nossos servidores; esse HTML é <strong>processado no momento e não é armazenado</strong> — guardamos apenas os dados estruturados do veículo.</p>
+
+<h3>1.5 O que NÃO recolhemos</h3>
+<ul>
+  <li>Não recolhemos localização do dispositivo.</li>
+  <li>Não acedemos a contactos, fotografias ou ficheiros do dispositivo.</li>
+  <li>Os nossos servidores não registam o teu endereço IP nos registos aplicacionais.</li>
+  <li>Não vendemos dados a terceiros e a app não mostra publicidade.</li>
+</ul>
+
+<h2>2. Para que usamos os dados</h2>
+<table>
+  <tr><th>Finalidade</th><th>Dados</th><th>Base legal (RGPD)</th></tr>
+  <tr><td>Prestar o serviço de análise de veículos</td><td>Dados do anúncio, identificador de convidado</td><td>Execução do contrato (art. 6.º 1 b)</td></tr>
+  <tr><td>Conta, histórico e sincronização</td><td>Email, nome, palavra-passe (hash), análises guardadas</td><td>Execução do contrato</td></tr>
+  <tr><td>Limites de utilização do plano gratuito</td><td>Contadores diários por identificador</td><td>Interesse legítimo (sustentabilidade do serviço)</td></tr>
+  <tr><td>Correção de erros da aplicação</td><td>Dados técnicos de diagnóstico (sem email/nome)</td><td>Interesse legítimo (qualidade e segurança do serviço)</td></tr>
+  <tr><td>Notificações (ex.: alertas de preço)</td><td>Token push</td><td>Consentimento (podes desativar no dispositivo)</td></tr>
+</table>
+
+<h2>3. Com quem partilhamos dados</h2>
+<p>Não vendemos nem cedemos dados pessoais. Usamos os seguintes subcontratantes técnicos:</p>
+<ul>
+  <li><strong>Railway</strong> (alojamento dos servidores e base de dados). Os dados descritos nesta política são armazenados nesta infraestrutura.</li>
+  <li><strong>Tavily</strong> (pesquisa técnica na web): para identificar problemas conhecidos de um motor, enviamos <strong>apenas consultas técnicas</strong> do tipo «Peugeot 2.2 HDi 2014 problemas conhecidos» — nunca dados pessoais teus.</li>
+  <li><strong>Sentry</strong> (monitorização de erros): quando a aplicação encontra um erro, são enviados dados técnicos de diagnóstico (modelo do dispositivo, versão da app, rastreio do erro e o identificador anónimo de convidado) para diagnóstico e correção. Não são enviados o teu email, nome nem conteúdos da conta.</li>
+  <li><strong>Expo</strong> (entrega de notificações push e atualizações da app), quando aplicável.</li>
+  <li><strong>Google Play</strong> (distribuição da app), sujeita à política de privacidade da Google.</li>
+</ul>
+<p>Fornecedores de infraestrutura de rede (ex.: CDN dos sites de anúncios, plataforma de alojamento) podem registar dados técnicos de ligação nos seus próprios sistemas, fora do nosso controlo aplicacional.</p>
+
+<h2>4. Quanto tempo guardamos os dados</h2>
+<ul>
+  <li><strong>Cache de análises de anúncios:</strong> 7 dias.</li>
+  <li><strong>Dados de referência de mercado</strong> (preços agregados, sem dados pessoais): até 30 dias nas caches; agregados podem persistir.</li>
+  <li><strong>Conta, histórico guardado e identificadores:</strong> até pedires a eliminação.</li>
+  <li><strong>Contadores de utilização:</strong> renovam diariamente/mensalmente.</li>
+</ul>
+
+<h2>5. Segurança</h2>
+<p>Toda a comunicação entre a app e os servidores usa HTTPS. As palavras-passe são guardadas com hash bcrypt. As credenciais de sessão no dispositivo ficam em armazenamento seguro do sistema (Secure Store).</p>
+
+<h2>6. Os teus direitos (RGPD)</h2>
+<p>Se estás na União Europeia, tens direito a aceder, retificar, eliminar e transportar os teus dados, bem como a opor-te ou limitar certos tratamentos. Para exercer qualquer direito, escreve para <strong>admin@snapdrivin.pt</strong> — respondemos no prazo legal. A eliminação da conta elimina os teus dados pessoais (email, nome, credenciais) e desassocia de forma irreversível o teu histórico de análises, que deixa de estar ligado a qualquer pessoa. Tens ainda o direito de apresentar reclamação à autoridade de controlo portuguesa, a <strong>CNPD</strong> (Comissão Nacional de Proteção de Dados, www.cnpd.pt).</p>
+
+<h2>7. Menores</h2>
+<p>A SnapDrivin não se destina a menores de 16 anos e não recolhemos conscientemente dados de menores.</p>
+
+<h2>8. Alterações a esta política</h2>
+<p>Se alterarmos esta política de forma relevante, atualizamos a data no topo e, quando justificado, avisamos na app. A versão em vigor está sempre disponível neste endereço.</p>
+</section>
+
+<hr class="divider">
+
+<!-- ============================== ENGLISH ============================== -->
+<section id="en" lang="en">
+<h1>Privacy Policy — SnapDrivin</h1>
+<p class="meta">Last updated: August 23, 2026 · Version 1.1</p>
+
+<p>SnapDrivin is an app that analyses public used-car listings (e.g. from OLX and Standvirtual) and presents an informative assessment of the vehicle: price versus market, known engine problems and estimated running costs. This policy explains, honestly and completely, what data we process, why, and what your rights are.</p>
+
+<p>The data controller is the individual developer of SnapDrivin. Privacy contact: <strong>admin@snapdrivin.pt</strong>.</p>
+
+<h2>1. Data we collect</h2>
+
+<h3>1.1 Account (optional)</h3>
+<p>You can use SnapDrivin without creating an account. If you choose to register, we collect: <strong>email address</strong>, <strong>name</strong> and <strong>password</strong> (stored only as a bcrypt hash — never in readable form).</p>
+
+<h3>1.2 Device identifier</h3>
+<p>On first launch the app creates an <strong>anonymous guest identifier</strong> (a random code, not linked to your real identity) and records the device platform (Android/iOS). If you enable notifications, we also store the device's <strong>push notification token</strong>. This identifier lets us keep your history and apply fair usage limits without requiring an account.</p>
+
+<h3>1.3 Usage and diagnostic data</h3>
+<p>We record <strong>usage counters</strong> (number of analyses per day, tied to the account or guest identifier) to apply free-plan limits, and the <strong>analyses you choose to save</strong> to your history. When the app hits an error, <strong>technical diagnostic data</strong> (device model, app version, error trace) is collected so we can fix it — see section 3 (Sentry). We also count, in an <strong>aggregated and anonymous</strong> way, usage events (for example, how many analyses are started, completed or fail, and from which portal), <strong>with no cookies, no IP address and no identifier</strong> — only per-day totals, to improve the service.</p>
+
+<h3>1.4 Data from analysed listings</h3>
+<p>When you submit a listing link, we process that listing's <strong>public data</strong>: make, model, year, mileage, engine, price and the main photo's address. This is data published by the seller on the listing site, not your personal data. To improve reliability, the app may transmit the listing page's HTML from your device to our servers; that HTML is <strong>processed on the fly and not stored</strong> — we keep only the structured vehicle data.</p>
+
+<h3>1.5 What we do NOT collect</h3>
+<ul>
+  <li>We do not collect device location.</li>
+  <li>We do not access contacts, photos or files on your device.</li>
+  <li>Our application servers do not log your IP address.</li>
+  <li>We do not sell data to third parties, and the app shows no advertising.</li>
+</ul>
+
+<h2>2. Why we use the data</h2>
+<table>
+  <tr><th>Purpose</th><th>Data</th><th>Legal basis (GDPR)</th></tr>
+  <tr><td>Providing the vehicle-analysis service</td><td>Listing data, guest identifier</td><td>Contract performance (art. 6(1)(b))</td></tr>
+  <tr><td>Account, history and sync</td><td>Email, name, password (hash), saved analyses</td><td>Contract performance</td></tr>
+  <tr><td>Free-plan usage limits</td><td>Daily counters per identifier</td><td>Legitimate interest (service sustainability)</td></tr>
+  <tr><td>Fixing app errors</td><td>Technical diagnostic data (no email/name)</td><td>Legitimate interest (service quality and security)</td></tr>
+  <tr><td>Notifications (e.g. price alerts)</td><td>Push token</td><td>Consent (you can disable on the device)</td></tr>
+</table>
+
+<h2>3. Who we share data with</h2>
+<p>We do not sell or trade personal data. We use the following technical processors:</p>
+<ul>
+  <li><strong>Railway</strong> (server and database hosting). The data described in this policy is stored on this infrastructure.</li>
+  <li><strong>Tavily</strong> (technical web search): to identify an engine's known problems we send <strong>technical queries only</strong>, such as "Peugeot 2.2 HDi 2014 known problems" — never your personal data.</li>
+  <li><strong>Sentry</strong> (error monitoring): when the app hits an error, technical diagnostic data (device model, app version, error trace and the anonymous guest identifier) is sent for diagnosis and fixing. Your email, name and account contents are never sent.</li>
+  <li><strong>Expo</strong> (push notification delivery and app updates), where applicable.</li>
+  <li><strong>Google Play</strong> (app distribution), subject to Google's privacy policy.</li>
+</ul>
+<p>Network infrastructure providers (e.g. the listing sites' CDN, the hosting platform) may log technical connection data in their own systems, outside our application-level control.</p>
+
+<h2>4. How long we keep data</h2>
+<ul>
+  <li><strong>Listing analysis cache:</strong> 7 days.</li>
+  <li><strong>Market reference data</strong> (aggregated prices, no personal data): up to 30 days in caches; aggregates may persist.</li>
+  <li><strong>Account, saved history and identifiers:</strong> until you request deletion.</li>
+  <li><strong>Usage counters:</strong> reset daily/monthly.</li>
+</ul>
+
+<h2>5. Security</h2>
+<p>All communication between the app and our servers uses HTTPS. Passwords are stored as bcrypt hashes. Session credentials on the device are kept in the system's secure storage.</p>
+
+<h2>6. Your rights (GDPR)</h2>
+<p>If you are in the European Union, you have the right to access, rectify, erase and port your data, and to object to or restrict certain processing. To exercise any right, write to <strong>admin@snapdrivin.pt</strong> — we reply within the legal deadline. Deleting your account erases your personal data (email, name, credentials) and irreversibly dissociates your analysis history, which is no longer linked to any person. You also have the right to lodge a complaint with the Portuguese supervisory authority, the <strong>CNPD</strong> (Comissão Nacional de Proteção de Dados, www.cnpd.pt).</p>
+
+<h2>7. Children</h2>
+<p>SnapDrivin is not directed at children under 16 and we do not knowingly collect data from minors.</p>
+
+<h2>8. Changes to this policy</h2>
+<p>If we materially change this policy we will update the date above and, where warranted, notify you in the app. The current version is always available at this address.</p>
+</section>
+
+<footer>
+SnapDrivin · Contacto/Contact: admin@snapdrivin.pt
+</footer>
+
+</main>
+</body>
+</html>

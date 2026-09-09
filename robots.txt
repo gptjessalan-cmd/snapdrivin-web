@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://snapdrivin.pt/sitemap-index.xml
